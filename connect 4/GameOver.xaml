@@ -1,0 +1,14 @@
+﻿<Window x:Class="connect_4.GameOver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:connect_4"
+        mc:Ignorable="d"
+        Title="GameOver" Height="350" Width="450">
+    <Grid>
+        <Label Content="GameOver" FontSize="44" Margin="111,0,111,0" VerticalAlignment="Top"/>
+        <Label x:Name="winner" Content="Winner" FontSize="33" Margin="164,69,164,0" VerticalAlignment="Top"/>
+        <Button x:Name="close" Content="close" HorizontalAlignment="Center" Margin="0,214,0,0" VerticalAlignment="Top" Width="106" Click="CloseButton_Click"/>
+    </Grid>
+</Window>

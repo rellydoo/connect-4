@@ -1,0 +1,22 @@
+﻿<Window x:Class="connect_4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:connect_4"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="400">
+    <Grid>
+        <Label Content="Connect 4" FontSize="24" Margin="10" VerticalAlignment="Top"/>
+
+        <Label Content="Game Mode:" Margin="10,50,10,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="GameModeComboBox" Margin="10,80,10,0" VerticalAlignment="Top" SelectionChanged="GameModeComboBox_SelectionChanged">
+            <ComboBoxItem Content="Player vs Player"/>
+            <ComboBoxItem Content="Player vs Computer"/>
+        </ComboBox>
+
+        <Button x:Name="PlayButton" Content="Play" Margin="10,140,10,0" VerticalAlignment="Top" Width="100" Click="PlayButton_Click"/>
+        
+    </Grid>
+</Window>
